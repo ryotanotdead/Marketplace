@@ -13,5 +13,4 @@ import {Layout} from './components/layout'
 </script>
 
 <style scoped>
-
 </style>
