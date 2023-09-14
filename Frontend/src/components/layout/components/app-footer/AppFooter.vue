@@ -1,39 +1,83 @@
+<script lang="ts">
+import { defineComponent, h, ref } from "vue";
+import { type MenuOption } from "naive-ui";
 
-<script setup lang="ts">
-
+const menuOptions: MenuOption[] = [
+  {
+    label: () =>
+      h(
+        "a",
+        {
+          href: "/#/about",
+          rel: "noopenner noreferrer",
+        },
+        "About us"
+      ),
+    key: "about",
+  },
+  {
+    label: () =>
+      h(
+        "a",
+        {
+          href: "/#/shipping",
+          rel: "noopenner noreferrer",
+        },
+        "Shipping"
+      ),
+    key: "shipping",
+  },
+  {
+    label: () =>
+      h(
+        "a",
+        {
+          href: "/#/contacts",
+          rel: "noopenner noreferrer",
+        },
+        "Contacts"
+      ),
+    key: "contacts",
+  },
+];
+export default defineComponent({
+  setup() {
+    return {
+      activeKey: ref<string | null>(null),
+      menuOptions,
+    };
+  },
+});
 </script>
 
 <template>
- <div class="footer"> 
-    <ul class="footer__info">
-        <li><a href="/#/about"><strong>About us</strong></a></li>
-        <li><a href="/#/contacts"><strong>Contacts</strong></a></li>
-        <li><a href="/#/shipping"><strong>Shipping</strong></a></li>
-    </ul>
-</div>
+  <div class="container">
+    <n-menu
+      class="footer"
+      v-model:value="activeKey"
+      mode="horizontal"
+      :options="menuOptions"
+    />
+  </div>
 </template>
 
 <style scoped>
+.container {
+  position: absolute;
+  bottom: 0px;
+  max-width: 2400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f3;
+  height: 100px;
+}
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-	width: 100%;
-	height: 80px;
-    background-color: #F3F3F3;
-    font-size: 20px;
-}
-.footer__info{
-    margin-left: 33%;
-}
-.footer a{
-    display: flex;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-decoration: none;
-    color: #131313;
-}
-.footer li{
-    display: inline-block;
+  font-size: 20px;
+  /* width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; */
 }
 </style>

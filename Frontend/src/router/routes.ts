@@ -8,5 +8,7 @@ export const routes = [
   { path: "/about", name: "About us", component: defineAsyncComponent(() => import("../views/About.vue")) },
   { path: "/shipping", name: "Shipping", component: defineAsyncComponent(() => import("../views/Shipping.vue")) },
   { path: "/contacts", name: "Contacts", component: defineAsyncComponent(() => import("../views/Contacts.vue")) },
-
+  { path: "/haori", name: "Haori", component: defineAsyncComponent(() => import("../views/Haori.vue")) },
+  { path: "/cosplay", name: "Cosplay", component: defineAsyncComponent(() => import("../views/Cosplay.vue")) },
+  { path: "/kitsune", name: "Kitsune", component: defineAsyncComponent(() => import("../views/Kitsune.vue")) },
 ];
