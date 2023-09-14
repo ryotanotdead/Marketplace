@@ -52,6 +52,7 @@ export default defineComponent({
 
 <template>
   <div class="container">
+    <div>shgsdghsldk</div>
     <n-menu
       class="footer"
       v-model:value="activeKey"
