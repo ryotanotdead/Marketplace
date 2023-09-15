@@ -68,16 +68,12 @@ export default defineComponent({
   max-width: 2400px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #f3f3f3;
   height: 100px;
 }
 .footer {
   font-size: 20px;
-  /* width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; */
 }
 </style>

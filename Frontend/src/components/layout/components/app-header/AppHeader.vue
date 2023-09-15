@@ -123,7 +123,7 @@ export default defineComponent({
 .menu {
   width: 6%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between !important;
   align-items: center;
   padding-right: 3%;
 }

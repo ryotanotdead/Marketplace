@@ -1,13 +1,14 @@
 <script setup lang="ts"></script>
 <template>
   <div class="item__list">
-    <n-card class="item" title="Haori A">
+    <!-- <n-card class="item" title="Haori A">
       <template #cover>
         <img src="../../public/assets/haori1.jpg" />
       </template>
       Haori Description
-    </n-card>
-    <n-card class="item" title="Haori B">
+    </n-card> -->
+
+    <!-- <n-card class="item" title="Haori B">
       <template #cover>
         <img src="../../public/assets/haori2.jpg" />
       </template>
@@ -50,7 +51,7 @@
         <img src="../../public/assets/haori8.jpg" />
       </template>
       Haori Description
-    </n-card>
+    </n-card> -->
   </div>
 </template>
 
